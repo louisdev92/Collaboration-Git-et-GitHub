@@ -39,3 +39,107 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0e68c;
+    font-family: 'Papyrus', sans-serif;
+    color: #ff6347;
+    transform: rotate(45deg);
+    animation: wobble 2s infinite;
+}
+
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+h1 {
+    font-size: 100px;
+    text-shadow: 10px 10px 20px pink, -10px -10px 20px green;
+    animation: jump 1s infinite alternate;
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+p {
+    font-size: 20px;
+    color: #008080;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeInOut 3s infinite ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+div {
+    background-color: #800080;
+    padding: 50px;
+    border: 10px solid limegreen;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 25px orange;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+button {
+    background-color: #ff00ff;
+    border: none;
+    padding: 20px 50px;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px black;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: yellow;
+    transform: scale(1.5) rotate(180deg);
+}
+
+img {
+    border: 5px dashed #0000ff;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 20px 5px red;
+    animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+}
+
+footer {
+    background-color: #32cd32;
+    text-align: center;
+    padding: 100px;
+    font-size: 40px;
+    color: #ff1493;
+    text-transform: lowercase;
+    letter-spacing: 10px;
+}
+
