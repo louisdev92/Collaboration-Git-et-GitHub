@@ -80,11 +80,6 @@ p {
 }
 
 div {
-    background-color: #800080;
-    padding: 50px;
-    border: 10px solid limegreen;
-    border-radius: 50%;
-    box-shadow: 0 0 50px 25px orange;
     animation: spin 3s linear infinite;
 }
 
